@@ -137,7 +137,7 @@ h4{font-size: 1em;}
        font-size: 12px;
 }
 .about{
-       margin: 38px 0;
+       margin: 38px 20px;
 
 }
 .about h3{
@@ -254,13 +254,14 @@ h4{font-size: 1em;}
               display: none; /* Hide the navigation menu by default on smaller screens */
               flex-direction: column;
               width: 78.8%;
-              height: 40%;
+              height: 30%;
               position: absolute;
               color: white;
               background-color: var(--primary-color);
-              padding-top: 40px;
               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
               z-index: 11;
+              top: 40px;
+              text-align: center;
        }
        .nav a {
               margin-bottom: 10px;
