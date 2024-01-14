@@ -73,21 +73,24 @@ h3{font-size:2em}
 h4{font-size: 1em;}
 .head{
        background-color: var(--primary-color);
-       font-size: 40px;
        display: flex;
        justify-content: space-evenly;
        align-items: right;
        padding: 10px;
+       height: 50px;
+}
+.head img {
+       cursor: pointer;
 }
 .secondHead{
        display: flex;
        justify-content: space-around;
        align-items: center;
+       height: 70px;
 }
 .logo{
-       width: 120px;
-       height: 70px;
-       margin-top: 20px;
+       width: 100px;
+       height: 50px;
 }
 /* Add some basic styling for the burger menu */
 .burger-menu {
@@ -100,7 +103,7 @@ h4{font-size: 1em;}
        justify-content: space-between;
 }
 .home{
-       background-color:var(--second-color); 
+       background-color:var(--primary-color); 
        position: relative;
 }
 .home img{
@@ -112,6 +115,7 @@ h4{font-size: 1em;}
        position: absolute;
        font-size: 8px;
        color: white;
+       letter-spacing: 1px;
        left:40% ; top:50%; transform: translate(-50%, -50%);
        
 }
@@ -124,17 +128,52 @@ h4{font-size: 1em;}
        font-weight: 700;
        cursor: pointer;
        letter-spacing: 1px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-size: 7px;
+}
+.home button i{
+       font-size: 12px;
+}
+.about{
+       margin: 38px 0;
+
+}
+.about h3{
+       padding: 20px 0;
+       letter-spacing: 1px;
+}
+.about button{
+       border: none;
+       border-radius: 20px;
+       padding: 15px;
+       background-color: var(--primary-color);
+       color: var(--flashwhite-color);
+       font-weight: 700;
+       cursor: pointer;
+       letter-spacing: 1px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-size: 7px;
+}
+.about button i{
+       font-size: 12px;
 }
 .main{
-       background-color: var(--second-color);
+       background-color: var(--primary-color);
 }
 .main h1{
        text-align: center;
+       padding: 30px;
+       letter-spacing: 1px;
 }
 .shop{
        display: grid;
        grid-template-columns: auto auto auto;
        justify-content: center;
+       padding-bottom: 30px;
 }
 .shop img{
        width: 120px;
@@ -142,23 +181,86 @@ h4{font-size: 1em;}
        margin: 4px;
        border: 1px solid var(--primary-color);
 }
+.mapp{
+       padding: 20px 0px;
+}
+.mapp h4{
+       padding: 15px 0;
+       letter-spacing: 1px;
+       text-align: center;
+}
+#map {
+       height: 400px;
+       width: 100%;
+   }
+   .footer {
+       background-color: var(--primary-color);
+}
 
+.footer-container {
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       padding: 20px;
+       font-size: 8px;
+}
+
+.footer-center a:link,
+.footer-center a:visited {
+       display: block;
+       color: #f1f1f1;
+       font-size: 12px;
+}
+
+.footer-center p {
+       color: #f1f1f1;
+       font-size: 10px;
+}
+.footer-center div {
+       color: #f1f1f1;
+       font-size: 12px;
+}
+
+.footer-center h3 {
+       font-size: 14px;
+       font-weight: 400;
+       padding: 10px 0;
+}
+.heade{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 12px;
+       cursor: pointer;
+       padding: 10px;
+}
+.heade img{
+       width: 25px;
+}
+.momtaz p{
+       text-align: center;
+       font-size: 10px;
+       background-color: var(--second-color);
+       letter-spacing: 1.8px;
+}
 @media (max-width: 768px) {
        /* Show burger menu button on smaller screens */
        .burger-menu {
               display: block;
               font-size: 80px;
-              margin: -20px;
+              margin-bottom: 20px;
        }
 
        .nav {
               display: none; /* Hide the navigation menu by default on smaller screens */
               flex-direction: column;
-              width: 100%;
+              width: 78.8%;
+              height: 40%;
               position: absolute;
-              background-color: #f9f9f9;
-              padding: 10px;
+              color: white;
+              background-color: var(--primary-color);
+              padding-top: 40px;
               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              z-index: 11;
        }
        .nav a {
               margin-bottom: 10px;
